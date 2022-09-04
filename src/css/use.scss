@@ -1,0 +1,36 @@
+.use {
+  padding: 95px 0;
+  &__content {
+    display: flex;
+    align-items: center;
+    column-gap: 125px;
+  }
+  &__block {
+    width: 50%;
+    &_right {
+      position: relative;
+      img {
+        width: 100%;
+      }
+    }
+    &-link {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &__title {
+    @include text(600, 36px, 43px);
+  }
+  &__desc {
+    @include text(400, 14px, 140%);
+    margin: 20px 0 15px;
+  }
+  &__link {
+    @include text(400, 14px, 140%);
+    color: #ED4C5C;
+  }
+
+
+}
